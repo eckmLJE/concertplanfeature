@@ -1,5 +1,6 @@
 import React from "react";
+import "./Home.css";
 
-const Home = () => <div>Home</div>;
+const Home = () => <main className="home">Home</main>;
 
 export default Home;

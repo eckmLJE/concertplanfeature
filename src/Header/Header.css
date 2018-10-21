@@ -1,0 +1,55 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  z-index: 9000;
+  box-shadow: 0 8px 6px -6px #999;
+}
+
+header h1 {
+  margin-left: 100px;
+}
+
+header nav {
+  margin-right: 100px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  box-sizing: content-box;
+  position: relative;
+  display: inline-block;
+  list-style: none;
+  margin: 0 15px;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+header li:hover {
+  border-bottom: 2px solid white;
+}
+
+header li.navActive,
+header li.navActive:hover {
+  border-bottom: 2px solid rgb(207, 12, 126);
+}
+
+.hamburger {
+  display: none;
+}
