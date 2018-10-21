@@ -3,6 +3,8 @@ import "./ConcertTile.css";
 
 import moment from "moment";
 
+import { StartPlanButton } from "../Buttons/Buttons";
+
 class ConcertTile extends Component {
   selectImage = () => {
     const image = this.props.concert.images.find(image => image.width > 1000);
@@ -25,9 +27,11 @@ class ConcertTile extends Component {
                   "MMMM Do YYYY, h:mm a"
                 )}
               </p>
-              <p>{this.props.concert._embedded.venues[0].name}</p>
             </div>
-            <div className="tile-plan-details" />
+            <div className="tile-plan-details">
+              
+              <StartPlanButton />
+            </div>
           </div>
         </div>
       </div>

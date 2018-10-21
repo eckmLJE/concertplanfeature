@@ -1,0 +1,25 @@
+.plan-button {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.start-plan-button button {
+  box-sizing: border-box;
+  background-color: rgb(207, 12, 126);
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 5px auto;
+  cursor: pointer;
+  transition: all 0.7s;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 600;
+  width: 100%;
+}
