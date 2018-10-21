@@ -21,10 +21,12 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/concerts" component={Concerts} />
-        <Route exact path="/plans" component={Plans} />
-        <Route path="/plans/:id" component={PlanView} />
+        <div style={{ marginTop: "50px" }}>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/concerts" component={Concerts} />
+          <Route exact path="/plans" component={Plans} />
+          <Route path="/plans/:id" component={PlanView} />
+        </div>
       </div>
     );
   }

@@ -13,12 +13,12 @@ header {
 }
 
 header h1 {
-  margin-left: 100px;
+  margin-left: 50px;
   cursor: pointer;
 }
 
 header nav {
-  margin-right: 100px;
+  margin-right: 50px;
 }
 
 header ul {

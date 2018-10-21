@@ -1,0 +1,26 @@
+.concert-tile {
+  width: 50%;
+  height: 250px;
+  padding: 10px;
+}
+
+.concert-tile-inner {
+  background-color: pink;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.concert-tile-inner:hover {
+  transform: scale(1.02);
+}
+
+@media only screen and (max-width: 950px) {
+  .concert-tile {
+    width: 100%;
+    max-width: 600px;
+  }
+}

@@ -14,7 +14,7 @@
 .instructions-content {
   position: relative;
   background-color: white;
-  margin: 20% auto; /* 15% from the top and centered */
+  margin: 15% auto; /* 15% from the top and centered */
   padding: 25px 40px;
   width: 90%; /* Could be more or less, depending on screen size */
   max-width: 500px;
@@ -60,6 +60,7 @@
   transition: all 0.7s;
   border-radius: 5px;
   outline: none;
+  font-weight: 600;
 }
 
 .instr-button button:disabled {
@@ -75,6 +76,7 @@
   margin: 5px;
   transition: all 0.7s;
   border-radius: 5px;
+  transition: all .7s
 }
 
 .instr-button button:hover {

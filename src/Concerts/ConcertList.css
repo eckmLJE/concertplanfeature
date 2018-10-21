@@ -1,0 +1,16 @@
+.concert-list {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 950px) {
+  .concert-list {
+      flex-flow: column nowrap;
+  }
+}
