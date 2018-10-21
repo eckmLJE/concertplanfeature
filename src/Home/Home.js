@@ -1,6 +1,16 @@
 import React from "react";
 import "./Home.css";
 
-const Home = () => <main className="home">Home</main>;
+import InstructionsModal from "./InstructionsModal";
+import UserPanel from "./UserPanel";
+
+const Home = () => {
+  return (
+    <section className="home">
+      <InstructionsModal />
+      <UserPanel />
+    </section>
+  );
+};
 
 export default Home;

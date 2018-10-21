@@ -1,6 +1,7 @@
 const navReducer = (
   state = {
-    activeNav: ""
+    activeNav: "",
+    modalActive: true
   },
   action
 ) => {
@@ -9,6 +10,11 @@ const navReducer = (
       return {
         ...state,
         activeNav: action.nav
+      };
+    case "DISABLE_MODAL":
+      return {
+        ...state,
+        modalActive: false
       };
     default:
       return state;

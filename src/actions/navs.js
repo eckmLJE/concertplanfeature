@@ -21,3 +21,5 @@ export const navToPlanId = id => {
     dispatch(setActiveNav("plans"));
   };
 };
+
+export const handleWelcomeModal = () => ({ type: "DISABLE_MODAL" });

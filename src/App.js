@@ -21,12 +21,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <div className="content-container">
-          <Route exact path="/" component={Home} />
-          <Route exact path="/concerts" component={Concerts} />
-          <Route exact path="/plans" component={Plans} />
-          <Route path="/plans/:id" component={PlanView} />
-        </div>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/concerts" component={Concerts} />
+        <Route exact path="/plans" component={Plans} />
+        <Route path="/plans/:id" component={PlanView} />
       </div>
     );
   }

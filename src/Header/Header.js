@@ -25,7 +25,9 @@ class Header extends Component {
   render() {
     return (
       <header className="header">
-        <h1>CONCERTPLAN</h1>
+        <h1 name="home" onClick={this.handleNav}>
+          CONCERTPLAN
+        </h1>
         <Hamburger />
         <nav>
           <ul onClick={this.handleNav}>
