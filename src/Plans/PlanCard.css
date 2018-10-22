@@ -51,16 +51,30 @@
 
 .plan-concert-detail-inner {
   padding: 15px 20px;
+  text-transform: uppercase;
 }
 
-.plan-concert-detail h1 {
+.plan-concert-detail-inner h1 {
   padding: 0;
   margin: 0;
+  font-size: 1.3em;
+  color: rgb(19, 19, 19);
 }
 
-.plan-concert-detail p {
+.plan-concert-detail-inner h4 {
   padding: 0;
-  margin: 0;
+  margin: 3px 0 0 0;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: rgb(19, 19, 19);
+}
+
+.plan-concert-detail-inner p {
+  padding: 0;
+  margin: 3px 0 0 0;
+  font-size: 0.8em;
+  font-weight: 700em;
+  color: rgb(48, 48, 48);
 }
 
 .plan-detail {

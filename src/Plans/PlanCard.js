@@ -29,7 +29,7 @@ class PlanCard extends Component {
             <div className="plan-concert-detail">
               <div className="plan-concert-detail-inner">
                 <h1>{this.props.plan.attributes.name}</h1>
-                <p>{this.props.plan.attributes.venue}</p>
+                <h4>{this.props.plan.attributes.venue}</h4>
                 <p>
                   {moment(this.props.plan.attributes.datetime).format(
                     "MMMM Do YYYY"
