@@ -1,0 +1,27 @@
+.user-plate {
+  padding: 25px;
+}
+
+.user-plate h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.user-plate h1 span {
+  color: rgb(10, 153, 224);
+}
+
+.user-plate p {
+  margin: 20px 0;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.user-plate p strong {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.user-plate p strong:hover {
+  color: rgb(10, 153, 224);
+}
