@@ -1,7 +1,10 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import "./PlanCard.css";
 
 import moment from "moment";
+
+import { navToPlanId } from "../actions/navs";
 
 import { ViewPlanButton } from "../Buttons/Buttons";
 
@@ -62,7 +65,10 @@ class PlanCard extends Component {
                 </div>
               </div>
               <div className="plan-detail-right">
-                <ViewPlanButton />
+                <ViewPlanButton
+                  navToPlan={() => this.props.navToPlanId(this.props.plan.id)}
+                  key={this.props.plan.id}
+                />
               </div>
             </div>
           </div>
@@ -72,4 +78,17 @@ class PlanCard extends Component {
   }
 }
 
-export default PlanCard;
+// const mapStateToProps = state => ({
+//   loggedIn: state.user.loggedIn,
+//   currentUser: state.user.currentUser,
+//   plans: state.plans.plans
+// });
+
+const mapDispatchToProps = dispatch => ({
+  navToPlanId: planId => dispatch(navToPlanId(planId))
+});
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(PlanCard);

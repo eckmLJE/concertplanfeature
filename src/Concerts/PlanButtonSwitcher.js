@@ -47,7 +47,6 @@ class PlanButtonSwitcher extends Component {
   };
 
   handleNavToPlan = planId => {
-    console.log(planId);
     this.props.navToPlanId(planId);
   };
 
