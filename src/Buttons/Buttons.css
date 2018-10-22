@@ -67,7 +67,8 @@
   font-weight: 600;
   cursor: pointer;
   padding: 10px 40px;
-  width: 50%;
+  width: 100%;
+  outline: none;
 }
 
 .view-plan-button button {

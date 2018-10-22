@@ -11,11 +11,11 @@ export const LoginButton = props => {
 
 export const LogoutButton = props => {
   return (
-    <div className="logout-button">
-      <button onClick={props.logout}></button>
+    <div className="login-button">
+      <button onClick={props.logout}>LOG OUT</button>
     </div>
-  )
-}
+  );
+};
 
 export const InactivePlanButton = props => {
   return (
