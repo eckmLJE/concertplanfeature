@@ -34,7 +34,7 @@ class UserPlate extends Component {
               <strong name="plans" onClick={this.handleNav}>
                 PLANS
               </strong>{" "}
-              to see all upcoming plans, view details their details, and join
+              to see all upcoming plans, view their details, and join
               them.{" "}
             </p>
             <LogoutButton logout={this.props.logOutUser} />
