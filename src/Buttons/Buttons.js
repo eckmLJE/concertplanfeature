@@ -9,6 +9,14 @@ export const LoginButton = props => {
   );
 };
 
+export const LogoutButton = props => {
+  return (
+    <div className="logout-button">
+      <button onClick={props.logout}></button>
+    </div>
+  )
+}
+
 export const InactivePlanButton = props => {
   return (
     <div className="plan-button start-plan-button inactive-plan-button">
