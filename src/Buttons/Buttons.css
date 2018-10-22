@@ -8,7 +8,6 @@
 
 .plan-button button {
   box-sizing: border-box;
-  background-color: rgb(10, 153, 224);
   border: none;
   color: white;
   text-align: center;
@@ -19,9 +18,11 @@
 }
 
 .start-plan-button button {
+  background-color: rgba(10, 153, 224, 0.644);
   padding: 20px 5px;
   width: 100%;
   height: 100%;
+  align-self: flex-end;
   transition: all 0.4s;
   border-bottom-right-radius: 10px;
   outline: none;
@@ -30,6 +31,18 @@
 
 .start-plan-button button:hover {
   font-size: 1.4em;
+}
+
+.inactive-plan-button button {
+  font-size: 0.65em;
+  cursor: not-allowed;
+  color: black;
+  background-color: rgb(231, 231, 231);
+  transition: none;
+}
+
+.inactive-plan-button button:hover {
+  font-size: 0.65em;
 }
 
 .login-button {
@@ -55,4 +68,16 @@
   cursor: pointer;
   padding: 10px 40px;
   width: 50%;
+}
+
+.view-plan-button button {
+  background-color: rgb(10, 153, 224);
+  padding: 20px 5px;
+  width: 100%;
+  height: 100%;
+  align-self: flex-end;
+  transition: all 0.4s;
+  border-bottom-right-radius: 10px;
+  outline: none;
+  font-weight: 700;
 }

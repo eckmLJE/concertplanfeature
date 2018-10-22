@@ -1,9 +1,13 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+
 import "./ConcertTile.css";
 
 import moment from "moment";
 
-import { StartPlanButton } from "../Buttons/Buttons";
+import { InactivePlanButton } from "../Buttons/Buttons";
+
+import PlanButtonSwitcher from "./PlanButtonSwitcher";
 
 class ConcertTile extends Component {
   selectImage = () => {
@@ -34,7 +38,11 @@ class ConcertTile extends Component {
               </p>
             </div>
             <div className="tile-plan-details">
-              <StartPlanButton />
+              {this.props.loggedIn ? (
+                <PlanButtonSwitcher concert={this.props.concert} />
+              ) : (
+                <InactivePlanButton />
+              )}
             </div>
           </div>
         </div>
@@ -43,4 +51,15 @@ class ConcertTile extends Component {
   }
 }
 
-export default ConcertTile;
+const mapStateToProps = state => ({
+  loggedIn: state.user.loggedIn
+});
+
+// const mapDispatchToProps = dispatch => ({
+//   logOutUser: () => dispatch(logOutUser())
+// });
+
+export default connect(
+  mapStateToProps,
+  null
+)(ConcertTile);

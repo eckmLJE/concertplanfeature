@@ -18,7 +18,7 @@ class UserPanel extends Component {
                 <li>
                   <h1>Alex</h1>
                   <p>
-                    <strong>username:</strong> alex@example.com
+                    <strong>email:</strong> alex@example.com
                   </p>
                   <p>
                     <strong>password:</strong> alex
@@ -27,7 +27,7 @@ class UserPanel extends Component {
                 <li>
                   <h1>Conor</h1>
                   <p>
-                    <strong>username:</strong> conor@example.com
+                    <strong>email:</strong> conor@example.com
                   </p>
                   <p>
                     <strong>password:</strong> conor
@@ -36,7 +36,7 @@ class UserPanel extends Component {
                 <li>
                   <h1>Josh</h1>
                   <p>
-                    <strong>username:</strong> josh@example.com
+                    <strong>email:</strong> josh@example.com
                   </p>
                   <p>
                     <strong>password:</strong> josh
@@ -45,7 +45,7 @@ class UserPanel extends Component {
                 <li>
                   <h1>Lucas</h1>
                   <p>
-                    <strong>username:</strong> lucas@example.com
+                    <strong>email:</strong> lucas@example.com
                   </p>
                   <p>
                     <strong>password:</strong> lucas
