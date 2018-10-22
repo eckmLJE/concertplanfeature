@@ -89,6 +89,43 @@
   width: 60%;
   height: 100%;
   border-right: 1px solid silver;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-bottom-left-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-bottom-left-header h1 {
+  height: 30%;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+  color: rgb(36, 36, 36);
+}
+
+.right-bottom-left ul {
+  width: 100%;
+  padding: 5px 10px;
+  height: 70%;
+  margin: 0;
+  font-size: 0.9em;
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-content: normal;
+}
+
+.right-bottom-left li {
+  padding: 2px 0;
+  margin: 0;
+  text-align: center;
 }
 
 .right-bottom-right {

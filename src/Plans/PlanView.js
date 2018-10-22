@@ -2,34 +2,42 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import "./PlanView.css";
 
+import { clearCurrentPlan, setCurrentPlan } from "../actions/plans";
+
 import PlanViewPanel from "./PlanViewPanel";
 
 class PlanView extends Component {
-  selectPlan = () => {
-    const planId = this.props.match.params.id;
-    return this.props.plans.find(plan => plan.id === planId);
+  componentDidMount = () => {
+    this.props.clearCurrentPlan();
+    const currentPlan = this.findPlanFromParams();
+    console.log(currentPlan);
+    this.props.setCurrentPlan(currentPlan);
+  };
+
+  findPlanFromParams = () => {
+    return this.props.plans.find(plan => plan.id === this.props.planId);
   };
 
   render() {
     return (
       <section className="plan-view">
-        {this.props.plans.length ? (
-          <PlanViewPanel plan={this.selectPlan()} />
-        ) : null}
+        {this.props.currentPlan ? <PlanViewPanel /> : null}
       </section>
     );
   }
 }
 
 const mapStateToProps = state => ({
-  plans: state.plans.plans
+  plans: state.plans.plans,
+  currentPlan: state.plans.currentPlan
 });
 
-//   const mapDispatchToProps = dispatch => ({
-//     navTo: nav => dispatch(navTo(nav))
-//   });
+const mapDispatchToProps = dispatch => ({
+  clearCurrentPlan: () => dispatch(clearCurrentPlan()),
+  setCurrentPlan: plan => dispatch(setCurrentPlan(plan))
+});
 
 export default connect(
   mapStateToProps,
-  null
+  mapDispatchToProps
 )(PlanView);

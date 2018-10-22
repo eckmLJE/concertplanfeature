@@ -40,3 +40,11 @@ export const ViewPlanButton = props => {
     </div>
   );
 };
+
+export const JoinPlanButton = props => {
+  return (
+    <div className="plan-button view-plan-button">
+      <button onClick={props.joinPlan}>JOIN PLAN</button>
+    </div>
+  );
+};
