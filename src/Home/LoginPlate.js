@@ -16,7 +16,6 @@ class LoginPlate extends Component {
   handleLogin = e => {
     e.preventDefault();
     const userData = this.state;
-    console.log(userData);
     this.props.authenticateUser(userData);
     this.setState({ email: "", password: "" });
   };

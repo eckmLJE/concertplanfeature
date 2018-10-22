@@ -1,0 +1,10 @@
+.plan-list {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  padding: 25px;
+  margin: auto;
+}

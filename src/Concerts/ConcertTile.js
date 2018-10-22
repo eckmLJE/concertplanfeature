@@ -16,12 +16,13 @@ class ConcertTile extends Component {
   };
 
   render() {
+    const imgUrl = this.selectImage();
     return (
       <div className="concert-tile">
         <div className="concert-tile-inner">
           <div
             className="tile-image"
-            style={{ backgroundImage: `url(${this.selectImage()}` }}
+            style={{ backgroundImage: `url(${imgUrl}` }}
           />
           <div className="tile-details">
             <div className="tile-event-details">
@@ -39,7 +40,10 @@ class ConcertTile extends Component {
             </div>
             <div className="tile-plan-details">
               {this.props.loggedIn ? (
-                <PlanButtonSwitcher concert={this.props.concert} />
+                <PlanButtonSwitcher
+                  imgUrl={imgUrl}
+                  concert={this.props.concert}
+                />
               ) : (
                 <InactivePlanButton />
               )}
