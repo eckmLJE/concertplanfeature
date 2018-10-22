@@ -5,6 +5,7 @@ import { StartPlanButton } from "../Buttons/Buttons";
 import { ViewPlanButton } from "../Buttons/Buttons";
 
 import { postPlan } from "../actions/plans";
+import { navToPlanId } from "../actions/navs";
 
 class PlanButtonSwitcher extends Component {
   checkConcertPlan = () => {
@@ -17,7 +18,10 @@ class PlanButtonSwitcher extends Component {
   planButtonSwitch = () => {
     const concertPlan = this.checkConcertPlan();
     return concertPlan ? (
-      <ViewPlanButton planId={concertPlan} key={this.props.concert.tmid} />
+      <ViewPlanButton
+        navToPlan={() => this.handleNavToPlan(concertPlan)}
+        key={this.props.concert.tmid}
+      />
     ) : (
       <StartPlanButton
         postPlan={this.handleStartPlan}
@@ -42,6 +46,11 @@ class PlanButtonSwitcher extends Component {
     this.props.postPlan(planData);
   };
 
+  handleNavToPlan = planId => {
+    console.log(planId);
+    this.props.navToPlanId(planId);
+  };
+
   render() {
     return <Fragment>{this.planButtonSwitch()}</Fragment>;
   }
@@ -54,7 +63,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  postPlan: planData => dispatch(postPlan(planData))
+  postPlan: planData => dispatch(postPlan(planData)),
+  navToPlanId: planId => dispatch(navToPlanId(planId))
 });
 
 export default connect(

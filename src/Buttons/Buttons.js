@@ -28,7 +28,7 @@ export const StartPlanButton = props => {
 export const ViewPlanButton = props => {
   return (
     <div className="plan-button view-plan-button">
-      <button>VIEW PLAN</button>
+      <button onClick={props.navToPlan}>VIEW PLAN</button>
     </div>
   );
 };
