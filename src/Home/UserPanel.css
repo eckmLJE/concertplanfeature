@@ -17,15 +17,69 @@ section.user-panel {
   height: 500px;
 }
 
+.sample-details {
+}
+
+.sample-details h1 {
+  padding: 5px 5px 0;
+  margin: 0;
+}
+
+.sample-details p {
+  padding: 0 5px;
+  margin: 5px 0;
+  font-size: 85%;
+  color: rgb(56, 56, 56);
+}
+
+.sample-details ul {
+  display: flex;
+  flex-flow: column nowrap;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.sample-details li {
+  padding-top: 10px;
+}
+
 .login-box {
-  width: 600px;
-  height: 500px;
+  width: 500px;
+  /* height: 500px; */
 }
 
 .user-card {
-  min-height: 400px;
+  /* min-height: 400px; */
+  width: 100%;
   padding: 20px;
   background-color: white;
   border-radius: 5px;
   border: 1px solid rgb(232, 232, 233);
+}
+
+.login-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-header {
+  margin: auto;
+}
+
+.login-header h1 {
+  padding: 5px 5px 0;
+  margin: 0;
+}
+
+.login-header p {
+  padding: 0 5px;
+  margin: 5px 0;
+  font-size: 85%;
+  color: rgb(56, 56, 56);
 }

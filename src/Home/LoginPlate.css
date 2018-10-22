@@ -1,0 +1,33 @@
+.login-plate {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 10px auto;
+}
+
+.login-plate h1 {
+  padding: 5px 5px 0;
+  margin: 0;
+}
+
+.login-plate p {
+  padding: 0 5px;
+  margin: 5px 0;
+  font-size: 85%;
+  color: rgb(56, 56, 56);
+}
+
+.login-plate input {
+  position: relative;
+  display: block;
+  padding: 10px;
+  margin: 10px auto;
+  width: 80%;
+  max-width: 275px;
+  border: none;
+  font-size: 1.2em;
+  outline: none;
+  color: rgb(39, 39, 39);
+  border-bottom: 1px solid silver;
+}
