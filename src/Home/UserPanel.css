@@ -1,2 +1,31 @@
 section.user-panel {
+  width: 90%;
+  max-width: 1100px;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.user-box {
+  padding: 10px;
+}
+
+.sample-users-box {
+  width: 300px;
+  height: 500px;
+}
+
+.login-box {
+  width: 600px;
+  height: 500px;
+}
+
+.user-card {
+  min-height: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(232, 232, 233);
 }

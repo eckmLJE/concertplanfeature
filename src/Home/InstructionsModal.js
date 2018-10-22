@@ -28,8 +28,11 @@ class InstructionsModal extends Component {
             group and participate in some concert planning!
           </p>
           <p>
-            The Rails back-end is hosted on Heroku {`(free)`}, which can
-            sometimes take 10-15 seconds to spool up. Thanks for your patience!
+            <strong>
+              The Rails back-end is hosted on Heroku {`(free)`}, which can
+              sometimes take 10-15 seconds to spool up. Thanks for your
+              patience!
+            </strong>
           </p>
           {this.props.herokuLoaded ? (
             <div className="instr-button">

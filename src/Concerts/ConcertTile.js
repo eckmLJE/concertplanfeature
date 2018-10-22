@@ -24,12 +24,16 @@ class ConcertTile extends Component {
               <h1>{this.props.concert.name}</h1>
               <p>
                 {moment(this.props.concert.dates.start.dateTime).format(
-                  "MMMM Do YYYY, h:mm a"
+                  "MMMM Do YYYY"
+                )}
+              </p>
+              <p>
+                {moment(this.props.concert.dates.start.dateTime).format(
+                  "h:mm a"
                 )}
               </p>
             </div>
             <div className="tile-plan-details">
-              
               <StartPlanButton />
             </div>
           </div>

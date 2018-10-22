@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <div style={{ marginTop: "50px" }}>
+        <div style={{ marginTop: "75px" }}>
           <Route exact path="/" component={Home} />
           <Route exact path="/concerts" component={Concerts} />
           <Route exact path="/plans" component={Plans} />
