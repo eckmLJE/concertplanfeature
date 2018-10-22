@@ -1,11 +1,20 @@
 import React, { Component } from "react";
 import "./CommentsDrawer.css";
 
+let counter = 0;
+
 class CommentsDrawer extends Component {
   state = { drawer: false };
 
-  handleDrawerClass = () =>
-    this.state.drawer ? " drawer-drop" : " drawer-raise";
+  handleDrawerClass = () => {
+    const drawerClass = this.state.drawer ? " drawer-drop" : " drawer-raise";
+    counter += 1;
+    if (counter > 1) {
+      return drawerClass;
+    } else {
+      return "";
+    }
+  };
 
   render() {
     return (
