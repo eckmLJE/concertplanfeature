@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import "./UserPanel.css";
 
 import LoginPlate from "./LoginPlate";
+import UserPlate from "./UserPlate";
 
 class UserPanel extends Component {
   render() {
@@ -55,13 +57,7 @@ class UserPanel extends Component {
         </div>
         <div className="user-box login-box">
           <div className="user-card">
-            <div className="login-container">
-              <div className="login-header">
-                <h1>LOG IN</h1>
-                <p>Please use one of the sample users to the left. </p>
-              </div>
-              <LoginPlate />
-            </div>
+            {this.props.loggedIn ? <UserPlate /> : <LoginPlate />}
           </div>
         </div>
       </section>
@@ -69,4 +65,15 @@ class UserPanel extends Component {
   }
 }
 
-export default UserPanel;
+const mapStateToProps = state => ({
+  loggedIn: state.user.loggedIn
+});
+
+// const mapDispatchToProps = dispatch => ({
+//   logOutUser: () => dispatch(logOutUser())
+// });
+
+export default connect(
+  mapStateToProps,
+  null
+)(UserPanel);

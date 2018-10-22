@@ -8,3 +8,11 @@ export const StartPlanButton = props => {
     </div>
   );
 };
+
+export const LoginButton = props => {
+  return (
+    <div className="login-button">
+      <button onClick={props.authenticate}>LOG IN</button>
+    </div>
+  );
+};
