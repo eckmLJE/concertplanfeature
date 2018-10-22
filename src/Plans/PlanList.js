@@ -9,7 +9,7 @@ const PlanList = props => {
       {!!props.plans.length ? (
         props.plans.map(plan => <PlanCard key={plan.id} plan={plan} />)
       ) : (
-        <div>You have no plans</div>
+        <div>Plans are loading...</div>
       )}
     </div>
   );
