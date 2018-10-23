@@ -155,3 +155,20 @@
   border: 1px solid silver;
   color: rgb(26, 26, 26);
 }
+
+.leave-plan-button button {
+  background-color: rgb(221, 221, 221);
+  color: rgb(39, 39, 39);
+  padding: 20px 5px;
+  width: 100%;
+  height: 100%;
+  align-self: flex-end;
+  transition: all 0.4s;
+  border-bottom-right-radius: 10px;
+  outline: none;
+  font-weight: 700;
+}
+
+.leave-plan-button button:hover {
+  font-size: 1.4em;
+}

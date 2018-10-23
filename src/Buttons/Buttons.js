@@ -48,6 +48,13 @@ export const JoinPlanButton = props => {
     </div>
   );
 };
+export const LeavePlanButton = props => {
+  return (
+    <div className="plan-button leave-plan-button">
+      <button onClick={props.leavePlan}>LEAVE PLAN</button>
+    </div>
+  );
+};
 
 export const SubmitCommentButton = props => {
   return (

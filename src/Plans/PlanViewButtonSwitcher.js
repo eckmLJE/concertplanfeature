@@ -1,25 +1,45 @@
-import React from "react";
+import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import "./PlanViewButtonSwitcher.css";
 
 import { JoinPlanButton } from "../Buttons/Buttons";
-import { addPlanUser } from "../actions/plans";
+import { LeavePlanButton } from "../Buttons/Buttons";
+import { addPlanUser, removePlanUser } from "../actions/plans";
 
-const PlanViewButtonSwitcher = props => (
-  <JoinPlanButton joinPlan={() => props.addPlanUser(props.planId)} />
-);
+class PlanViewButtonSwitcher extends Component {
+  checkPlanUsers = () => {
+    return this.props.currentPlan.attributes.users.some(
+      user => user.id.toString() === this.props.currentUser.id
+    );
+  };
 
-// const mapStateToProps = state => ({
-//     loggedIn: state.user.loggedIn,
-//     currentUser: state.user.currentUser,
-//     plans: state.plans.plans
-//   });
+  render() {
+    return (
+      <Fragment>
+        {this.checkPlanUsers() ? (
+          <LeavePlanButton
+            leavePlan={() => this.props.removePlanUser(this.props.plan.id)}
+          />
+        ) : (
+          <JoinPlanButton
+            joinPlan={() => this.props.addPlanUser(this.props.planId)}
+          />
+        )}
+      </Fragment>
+    );
+  }
+}
+
+const mapStateToProps = state => ({
+  currentUser: state.user.currentUser
+});
 
 const mapDispatchToProps = dispatch => ({
-  addPlanUser: planId => dispatch(addPlanUser(planId))
+  addPlanUser: planId => dispatch(addPlanUser(planId)),
+  removePlanUser: planId => dispatch(removePlanUser(planId))
 });
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(PlanViewButtonSwitcher);

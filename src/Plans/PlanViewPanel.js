@@ -44,7 +44,13 @@ const PlanViewPanel = props => (
             </ul>
           </div>
           <div className="right-bottom-right">
-            <PlanViewButtonSwitcher planId={props.currentPlan.id} />
+            {!!props.currentUser && (
+              <PlanViewButtonSwitcher
+                planUsers={props.currentPlan.attributes.users}
+                planId={props.currentPlan.id}
+                currentPlan={props.currentPlan}
+              />
+            )}
           </div>
         </div>
       </div>
@@ -57,6 +63,7 @@ const PlanViewPanel = props => (
 );
 
 const mapStateToProps = state => ({
+  currentUser: state.user.currentUser,
   plans: state.plans.plans,
   currentPlan: state.plans.currentPlan
 });
