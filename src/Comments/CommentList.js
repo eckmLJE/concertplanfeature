@@ -5,7 +5,7 @@ const CommentList = props => (
   <div className="comment-list">
     <ul>
       {props.comments.map(comment => (
-        <li>{comment.content}</li>
+        <li key={comment.id}>{comment.content}</li>
       ))}
     </ul>
   </div>

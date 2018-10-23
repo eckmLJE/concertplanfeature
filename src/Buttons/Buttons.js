@@ -56,3 +56,11 @@ export const SubmitCommentButton = props => {
     </div>
   );
 };
+
+export const CommentDrawerButton = props => {
+  return (
+    <div className="plan-button comment-drawer-button">
+      <button onClick={props.handleDrawer}>{props.content}</button>
+    </div>
+  );
+};

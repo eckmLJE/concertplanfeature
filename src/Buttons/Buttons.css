@@ -104,3 +104,21 @@
 .submit-comment-button button:hover {
   font-size: 0.8em;
 }
+
+.comment-drawer-button button {
+  background-color: rgb(10, 153, 224);
+  /* padding: 20px 5px; */
+  width: 100%;
+  height: 100%;
+  align-self: flex-end;
+  transition: all 0.4s;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  font-weight: 700;
+  font-size: 0.7em;
+  color: white;
+}
+
+.comment-drawer-button button:hover {
+  font-size: 0.8em;
+}

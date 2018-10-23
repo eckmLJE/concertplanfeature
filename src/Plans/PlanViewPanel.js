@@ -45,7 +45,10 @@ const PlanViewPanel = props => (
         </div>
       </div>
     </div>
-    <CommentsDrawer comments={props.currentPlan.attributes.comments} />
+    <CommentsDrawer
+      planId={props.currentPlan.id}
+      comments={props.currentPlan.attributes.comments}
+    />
   </div>
 );
 
