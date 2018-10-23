@@ -66,7 +66,10 @@ class CommentsDrawer extends Component {
                 handleDrawer={this.handleDrawerState}
               />
             </div>
-            <div className="comments-count" />
+            <div className="comments-count">
+              <h1># COMMENTS:</h1>
+              <p>{this.props.comments.length}</p>
+            </div>
           </div>
         </div>
       </div>
