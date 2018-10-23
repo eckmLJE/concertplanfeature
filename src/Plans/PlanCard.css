@@ -176,3 +176,40 @@
   font-size: 0.8em;
   color: rgb(10, 153, 224);
 }
+
+@media only screen and (max-width: 750px) {
+  .plan-concert-detail-inner h1 {
+    margin: 0;
+    font-size: 80%;
+  }
+
+  .plan-concert-detail-inner h4 {
+    margin: 5px 0 0 0;
+    font-size: 70%;
+  }
+
+  .plan-concert-detail-inner p {
+    margin: 4px 0 0 0;
+    font-size: 65%;
+  }
+
+  .plan-detail-activity-left p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 40%;
+    color: rgb(59, 59, 59);
+  }
+
+  .plan-detail-activity-right p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 40%;
+    color: rgb(10, 153, 224);
+  }
+}
