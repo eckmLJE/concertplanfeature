@@ -1,4 +1,4 @@
-.plan-view-comments-drawer {
+.comments-drawer {
   position: absolute;
   width: 340px;
   height: 250px;
@@ -45,4 +45,54 @@
   to {
     margin-top: 50px;
   }
+}
+
+.drawer-buffer-top {
+  height: 5%;
+  width: 100%;
+  background-color: red;
+}
+
+.comment-list {
+  height: 70%;
+  width: 100%;
+  background-color: green;
+  overflow-y: scroll;
+}
+
+.add-show-comment {
+  height: 25%;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.form {
+  height: 70%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.form textarea {
+  width: 80%;
+  height: 100%;
+  outline: none;
+  resize: none;
+  padding: 5px;
+}
+
+.comment-submit {
+  width: 20%;
+  height: 100%;
+}
+
+.drawer-handle {
+  height: 30%;
+  width: 100%;
+  background-color: gray;
 }

@@ -48,3 +48,11 @@ export const JoinPlanButton = props => {
     </div>
   );
 };
+
+export const SubmitCommentButton = props => {
+  return (
+    <div className="plan-button submit-comment-button">
+      <button onClick={props.submitComment}>SUBMIT</button>
+    </div>
+  );
+};

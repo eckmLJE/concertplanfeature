@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import "./PlanViewPanel.css";
 import moment from "moment";
 
-import CommentsDrawer from "./CommentsDrawer";
+import CommentsDrawer from "../Comments/CommentsDrawer";
 import PlanViewButtonSwitcher from "./PlanViewButtonSwitcher";
 
 const PlanViewPanel = props => (

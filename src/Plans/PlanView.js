@@ -10,7 +10,6 @@ class PlanView extends Component {
   componentDidMount = () => {
     this.props.clearCurrentPlan();
     const currentPlan = this.findPlanFromParams();
-    console.log(currentPlan);
     this.props.setCurrentPlan(currentPlan);
   };
 
