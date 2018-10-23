@@ -18,7 +18,7 @@ class PlanViewButtonSwitcher extends Component {
       <Fragment>
         {this.checkPlanUsers() ? (
           <LeavePlanButton
-            leavePlan={() => this.props.removePlanUser(this.props.plan.id)}
+            leavePlan={() => this.props.removePlanUser(this.props.planId)}
           />
         ) : (
           <JoinPlanButton
