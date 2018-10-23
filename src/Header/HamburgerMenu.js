@@ -7,6 +7,7 @@ import { navTo } from "../actions/navs";
 class HamburgerMenu extends Component {
   handleNav = e => {
     const nav = e.target.getAttribute("name");
+    this.props.handleBurger();
     this.props.navTo(nav);
   };
 

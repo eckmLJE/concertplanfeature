@@ -9,7 +9,7 @@ class Hamburger extends Component {
   burgerX = () => (this.state.hamburger ? " exed" : "");
 
   handleBurger = e => {
-    e.preventDefault();
+    if (e) e.preventDefault();
     this.setState({ hamburger: !this.state.hamburger });
   };
 
@@ -17,7 +17,10 @@ class Hamburger extends Component {
     const burgerClass = this.burgerX();
     return (
       <Fragment>
-        <HamburgerMenu burgerClass={burgerClass} />
+        <HamburgerMenu
+          handleBurger={this.handleBurger}
+          burgerClass={burgerClass}
+        />
         <button className="hamburger" onClick={this.handleBurger}>
           <div className="hamburger-box">
             <div className={"hamburger-inner top" + burgerClass} />
