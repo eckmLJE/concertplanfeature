@@ -41,7 +41,7 @@ export const authenticateUser = userData => dispatch => {
         dispatch({ type: "USER_AUTHENTICATED" });
         dispatch(loadUser());
       });
-    } else {
+    } else if (res.status === 404) {
       dispatch({ type: "USER_AUTHENTICATION_FAILED" });
     }
   });

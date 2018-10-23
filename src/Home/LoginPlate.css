@@ -31,3 +31,17 @@
   color: rgb(39, 39, 39);
   border-bottom: 1px solid silver;
 }
+
+.login-fail {
+  margin-top: 20px;
+}
+
+.login-fail p {
+  font-size: 0.8em;
+  color: rgb(155, 0, 0);
+  font-weight: 600;
+  margin: auto;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}

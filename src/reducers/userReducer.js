@@ -3,7 +3,8 @@ const userReducer = (
     loggedIn: false,
     currentUser: null,
     loadingAuthStatus: false,
-    loadingUserStatus: false
+    loadingUserStatus: false,
+    logInFailed: false
   },
   action
 ) => {
@@ -17,7 +18,8 @@ const userReducer = (
       return {
         ...state,
         loggedIn: true,
-        loadingAuthStatus: false
+        loadingAuthStatus: false,
+        logInFailed: false
       };
     case "FETCHING_USER":
       return {
@@ -41,6 +43,11 @@ const userReducer = (
         ...state,
         loggedIn: false,
         currentUser: null
+      };
+    case "USER_AUTHENTICATION_FAILED":
+      return {
+        ...state,
+        logInFailed: true
       };
     default:
       return state;

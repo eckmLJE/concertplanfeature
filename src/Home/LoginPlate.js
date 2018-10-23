@@ -44,17 +44,27 @@ class LoginPlate extends Component {
             }
           />
           <LoginButton authenticate={this.handleLogin} />
+          {this.props.logInFailed ? (
+            <div className="login-fail">
+            <p>LOGIN FAILED - PLEASE TRY AGAIN.</p>
+            <p>BE SURE TO USE SAMPLE LOGINS TO LEFT.</p>
+            </div>
+          ) : null}
         </div>
       </div>
     );
   }
 }
 
+const mapStateToProps = state => ({
+  logInFailed: state.user.logInFailed
+});
+
 const mapDispatchToProps = dispatch => ({
   authenticateUser: userData => dispatch(authenticateUser(userData))
 });
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(LoginPlate);
