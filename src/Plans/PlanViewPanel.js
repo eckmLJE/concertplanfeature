@@ -17,16 +17,20 @@ const PlanViewPanel = props => (
       />
       <div className="view-panel-right">
         <div className="panel-right-top">
-          <h1>{props.currentPlan.attributes.name}</h1>
-          <h4>{props.currentPlan.attributes.venue}</h4>
-          <p>
-            {moment(props.currentPlan.attributes.datetime).format(
-              "MMMM Do YYYY"
-            )}
-          </p>
-          <p>
-            {moment(props.currentPlan.attributes.datetime).format("h:mm a")}
-          </p>
+          <div className="right-top-left">
+            <h1>{props.currentPlan.attributes.name}</h1>
+            <p>
+              {moment(props.currentPlan.attributes.datetime).format(
+                "MMMM Do YYYY"
+              )}
+            </p>
+            <p>
+              {moment(props.currentPlan.attributes.datetime).format("h:mm a")}
+            </p>
+          </div>
+          <div className="right-top-right">
+            <h4>{props.currentPlan.attributes.venue}</h4>
+          </div>
         </div>
         <div className="panel-right-bottom">
           <div className="right-bottom-left">

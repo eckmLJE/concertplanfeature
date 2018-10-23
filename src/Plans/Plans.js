@@ -18,7 +18,7 @@ class Plans extends Component {
         {this.props.loggedIn ? (
           <PlanList plans={this.props.plans} />
         ) : (
-          <div>Please Log In to View Plans.</div>
+          <h1 className="please-log-in">Please Log In to View Plans.</h1>
         )}
       </section>
     );

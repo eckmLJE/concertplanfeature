@@ -27,6 +27,7 @@ class ConcertTile extends Component {
           <div className="tile-details">
             <div className="tile-event-details">
               <h1>{this.props.concert.name}</h1>
+              <h2>{this.props.concert._embedded.venues[0].name}</h2>
               <p>
                 {moment(this.props.concert.dates.start.dateTime).format(
                   "MMMM Do YYYY"

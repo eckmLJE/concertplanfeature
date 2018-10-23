@@ -3,3 +3,9 @@ section.plans {
   width: 100%;
   margin: auto;
 }
+
+section.plans.please-log-in h1 {
+  text-align: center;
+  max-width: 900px;
+  margin: 100px auto;
+}

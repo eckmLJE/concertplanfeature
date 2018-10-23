@@ -7,6 +7,7 @@ import { fetchPlans } from "../actions/plans";
 
 import ConcertList from "./ConcertList";
 import Spinner from "../Spinner/Spinner.js";
+import VenueSelector from "./VenueSelector";
 
 class Concerts extends Component {
   componentDidMount = () => {
@@ -17,6 +18,20 @@ class Concerts extends Component {
   render() {
     return (
       <section className="concerts">
+        <div
+          style={{
+            display: "flex",
+            width: "90%",
+            maxWidth: "700px",
+            flexDirection: "row",
+            margin: "auto",
+            paddingTop: "20px",
+            paddingBottom: "20px",
+            borderBottom: "1px solid silver"
+          }}
+        >
+          <VenueSelector />
+        </div>
         {this.props.concerts.length ? (
           <ConcertList concerts={this.props.concerts} />
         ) : (

@@ -2,6 +2,7 @@ import React from "react";
 import "./PlanList.css";
 
 import PlanCard from "./PlanCard";
+import Spinner from "../Spinner/Spinner";
 
 const PlanList = props => {
   return (
@@ -9,7 +10,7 @@ const PlanList = props => {
       {!!props.plans.length ? (
         props.plans.map(plan => <PlanCard key={plan.id} plan={plan} />)
       ) : (
-        <div>Plans are loading...</div>
+        <Spinner />
       )}
     </div>
   );

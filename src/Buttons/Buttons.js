@@ -64,3 +64,13 @@ export const CommentDrawerButton = props => {
     </div>
   );
 };
+
+export const VenueSelectButton = props => {
+  return (
+    <div className={"venue-select-button" + props.activeClass}>
+      <button onClick={props.venueSelect} name={props.venueName}>
+        {props.stringName}
+      </button>
+    </div>
+  );
+};

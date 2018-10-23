@@ -51,6 +51,15 @@ class UserPanel extends Component {
                     <strong>password:</strong> lucas
                   </p>
                 </li>
+                <li>
+                  <h1>Sam</h1>
+                  <p>
+                    <strong>email:</strong> sam@example.com
+                  </p>
+                  <p>
+                    <strong>password:</strong> sam
+                  </p>
+                </li>
               </ul>
             </div>
           </div>

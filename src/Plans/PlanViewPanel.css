@@ -49,8 +49,24 @@
   width: 100%;
   height: 65%;
   border-bottom: 1px solid silver;
-  padding: 15px 20px;
   text-transform: uppercase;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-top-left {
+  padding: 15px;
+  width: 60%;
+  height: 100%;
+  border-right: 1px solid silver;
+}
+
+.right-top-right {
+  padding: 15px;
+  width: 40%;
+  height: 100%;
 }
 
 .panel-right-top h1 {
