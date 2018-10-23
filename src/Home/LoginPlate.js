@@ -24,7 +24,7 @@ class LoginPlate extends Component {
       <div className="login-container">
         <div className="login-header">
           <h1>LOG IN</h1>
-          <p>Please use one of the sample users to the left. </p>
+          <p>Please use one of the logins from <strong>SAMPLE USERS</strong>.</p>
         </div>
         <div className="login-plate">
           <input

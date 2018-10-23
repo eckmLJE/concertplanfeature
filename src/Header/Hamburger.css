@@ -1,0 +1,51 @@
+/* Hamburger */
+
+button.hamburger {
+  display: block;
+  width: 25px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  margin-right: 25px;
+  padding: 0;
+  background-color: transparent;
+  z-index: 9999;
+}
+
+.hamburger-box {
+  width: 25px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  width: 25px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: black;
+  margin-top: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-inner.top.exed {
+  transform: rotate(-45deg);
+  margin-top: 5px;
+}
+.hamburger-inner.middle.exed {
+  transform: rotate(45deg);
+  margin-top: -4px;
+}
+.hamburger-inner.bottom.exed {
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+@media only screen and (min-width: 699px) {
+  button.hamburger {
+    display: none;
+  }
+}

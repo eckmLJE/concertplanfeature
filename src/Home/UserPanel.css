@@ -1,5 +1,5 @@
 section.user-panel {
-  width: 90%;
+  width: 100%;
   max-width: 1100px;
   position: relative;
   display: flex;
@@ -14,7 +14,6 @@ section.user-panel {
 
 .sample-users-box {
   width: 300px;
-  height: 500px;
 }
 
 .sample-details {
@@ -82,4 +81,12 @@ section.user-panel {
   margin: 5px 0;
   font-size: 85%;
   color: rgb(56, 56, 56);
+}
+
+@media only screen and (max-width: 700px) {
+  section.user-panel {
+    flex-flow: column-reverse nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -55,3 +55,29 @@ header li.navActive:hover {
 .hamburger {
   display: none;
 }
+
+@media only screen and (max-width: 699px) {
+  nav,
+  nav li,
+  nav ul,
+  nav i,
+  nav button {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  button.hamburger {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header h1 {
+    margin-left: 30px;
+  }
+}
