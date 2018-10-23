@@ -148,6 +148,7 @@
   height: 100%;
   border: none;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .venue-select-button.venue-inactive button {
