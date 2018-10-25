@@ -1,13 +1,14 @@
 .comments-drawer {
   position: absolute;
-  width: 340px;
+  width: 70%;
   height: 250px;
   background-color: white;
   z-index: 8000;
   top: 0;
   left: 0;
   margin-top: 50px;
-  margin-left: 42%;
+  margin-left: 20%;
+  margin-bottom: 75px;
   border-radius: 5px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.24);
@@ -54,6 +55,7 @@
 }
 
 .comment-list {
+  /* padding: 20px 10px; */
   height: 70%;
   width: 100%;
   /* background-color: green; */
@@ -84,6 +86,8 @@
   outline: none;
   resize: none;
   padding: 5px;
+  border: 1px solid silver;
+  border-radius: 0px;
 }
 
 .comment-submit {
@@ -130,20 +134,11 @@
   padding-left: 5px;
 }
 
-@media only screen and (max-width: 650px) {
-  .comments-drawer {
-    width: 240px;
-  }
-}
 
-@media only screen and (max-width: 485px) {
-  .comments-drawer {
-    width: 180px;
-  }
-}
 
-@media only screen and (max-width: 374px) {
+@media only screen and (max-width: 500px) {
   .comments-drawer {
-    width: 125px;
+    margin-left: 10%;
+    width: 80%;
   }
 }

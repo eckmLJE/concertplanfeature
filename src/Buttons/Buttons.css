@@ -127,6 +127,12 @@
   font-size: 0.8em;
 }
 
+@media only screen and (max-width: 485px) {
+  .comment-drawer-button button {
+    font-size: .6em;
+  }
+}
+
 .venue-select-button {
   display: flex;
   justify-content: center;

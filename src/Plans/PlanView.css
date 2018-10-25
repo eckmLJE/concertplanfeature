@@ -1,6 +1,7 @@
 section.plan-view {
   position: relative;
   width: 100%;
+  min-height: 700px;
   margin: auto;
   z-index: 5000;
 }
