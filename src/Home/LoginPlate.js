@@ -24,30 +24,34 @@ class LoginPlate extends Component {
       <div className="login-container">
         <div className="login-header">
           <h1>LOG IN</h1>
-          <p>Please use one of the logins from <strong>SAMPLE USERS</strong>.</p>
+          <p>
+            Please use one of the logins from <strong>SAMPLE USERS</strong>.
+          </p>
         </div>
         <div className="login-plate">
-          <input
-            type="text"
-            placeholder="email"
-            value={this.state.email}
-            onChange={e =>
-              this.setState({ email: e.target.value.toLowerCase() })
-            }
-          />
-          <input
-            type="password"
-            placeholder="password"
-            value={this.state.password}
-            onChange={e =>
-              this.setState({ password: e.target.value.toLowerCase() })
-            }
-          />
-          <LoginButton authenticate={this.handleLogin} />
+          <form>
+            <input
+              type="text"
+              placeholder="email"
+              value={this.state.email}
+              onChange={e =>
+                this.setState({ email: e.target.value.toLowerCase() })
+              }
+            />
+            <input
+              type="password"
+              placeholder="password"
+              value={this.state.password}
+              onChange={e =>
+                this.setState({ password: e.target.value.toLowerCase() })
+              }
+            />
+            <LoginButton authenticate={this.handleLogin} />
+          </form>
           {this.props.logInFailed ? (
             <div className="login-fail">
-            <p>LOGIN FAILED - PLEASE TRY AGAIN.</p>
-            <p>BE SURE TO USE SAMPLE LOGINS TO LEFT.</p>
+              <p>LOGIN FAILED - PLEASE TRY AGAIN.</p>
+              <p>BE SURE TO USE SAMPLE LOGINS TO LEFT.</p>
             </div>
           ) : null}
         </div>
