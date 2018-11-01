@@ -67,6 +67,10 @@
   padding: 15px;
   width: 40%;
   height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .panel-right-top h1 {
